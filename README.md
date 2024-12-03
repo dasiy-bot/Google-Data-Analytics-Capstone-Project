@@ -23,8 +23,8 @@ The dataset contains attributes related to student behaviors, environments, and 
 ## **Key Steps**  
 
 1. **Load the Dataset**
-´´´r
-   # Load data
+   ```r
+# Load data
 perfactors <- read.csv("path/to/StudentPerformanceFactors.csv")
 
 Rows: 6607 Columns: 20                 [] 89.75GB/s, eta:  0s
@@ -33,10 +33,10 @@ Delimiter: ","
 chr (13): Parental_Involvement, Acc...
 dbl  (7): Hours_Studied, Attendance...
 
-   # Preview the first few rows
-head(StudentPerformanceFactors)
+# Preview the first few rows
+head(perfactors)
 
-# A tibble: 6 × 20
+A tibble: 6 × 20
   Hours_Studied Attendance
           <dbl>      <dbl>
 1            23         84
@@ -45,20 +45,19 @@ head(StudentPerformanceFactors)
 4            29         89
 5            19         92
 6            19         88
-#   18 more variables:
-#   Parental_Involvement <chr>,
-#   Access_to_Resources <chr>,
-#   Extracurricular_Activities <chr>,
-#   Sleep_Hours <dbl>,
-#   Previous_Scores <dbl>,
-#   Motivation_Level <chr>, …
-
+18 more variables:
+Parental_Involvement <chr>,
+Access_to_Resources <chr>,
+Extracurricular_Activities <chr>,
+Sleep_Hours <dbl>,
+Previous_Scores <dbl>,
+Motivation_Level <chr>, …
+´´´
 2. **Inspect the Structure**  
-  ```r
+```r
 # Get data structure
 str(perfactors)
 
-> str(perfactors)
 tibble [6,378 × 21] (S3: tbl_df/tbl/data.frame)
  $ Hours_Studied             : num [1:6378] 23 19 24 29 19 19 29 25 17 23 ...
  $ Attendance                : num [1:6378] 84 64 98 89 92 88 84 78 94 98 ...
@@ -86,7 +85,7 @@ tibble [6,378 × 21] (S3: tbl_df/tbl/data.frame)
 
 # Summary statistics for all columns
 
-> summary(perfactors)
+summary(perfactors)
  Hours_Studied     Attendance    
  Min.   : 1.00   Min.   : 60.00  
  1st Qu.:16.00   1st Qu.: 70.00  
@@ -167,7 +166,7 @@ tibble [6,378 × 21] (S3: tbl_df/tbl/data.frame)
 
 2. **Handle Missing Data**  
 
-> colSums(is.na(perfactors))
+colSums(is.na(perfactors))
              Hours_Studied 
                          0 
                 Attendance 
@@ -208,25 +207,28 @@ Extracurricular_Activities
                          0 
                 Exam_Score 
                          0 
-> perfactors <- na.omit(perfactors)
-> sum(duplicated(perfactors))
-[1] 0
 
-3. **Separate Data Types**  
+perfactors <- na.omit(perfactors)
+sum(duplicated(perfactors))
+[1] 0 ´´´
+
+3. **Separate Data Types**
+```r
 perfactors$Hours_Studied <- as.numeric(perfactors$Hours_Studied)
-> perfactors$Attendance <- as.numeric(perfactors$Attendance)
-> perfactors$Sleep_Hours <- as.numeric(perfactors$Sleep_Hours)
-> perfactors$Previous_Scorse <- as.numeric(perfactors$Previous_Scores)
-> perfactors$Previous_Scores <- as.numeric(perfactors$Previous_Scores)
-> perfactors$Parental_Involvement <- as.factor(perfactors$Parental_Involvement)
+perfactors$Attendance <- as.numeric(perfactors$Attendance)
+perfactors$Sleep_Hours <- as.numeric(perfactors$Sleep_Hours)
+perfactors$Previous_Scorse <- as.numeric(perfactors$Previous_Scores)
+perfactors$Previous_Scores <- as.numeric(perfactors$Previous_Scores)
+perfactors$Parental_Involvement <- as.factor(perfactors$Parental_Involvement) ´´´
 
 4. **Visualize the Data**  
-   > ggplot(perfactors, aes(x = Exam_Score)) +
-+     geom_histogram(binwidth = 5, fill = "blue", color = "black")
+```r
+ggplot(perfactors, aes(x = Exam_Score)) +
+     geom_histogram(binwidth = 5, fill = "blue", color = "black") 
 
-> ggplot(perfactors, aes(x = Teacher_Quality)) +
-+     geom_bar(fill = "orange")
-
+ggplot(perfactors, aes(x = Teacher_Quality)) +
+     geom_bar(fill = "orange")
+´´´
 
    - Develop interactive **Tableau** dashboards for deeper analysis.
 
