@@ -24,7 +24,7 @@ The dataset contains attributes related to student behaviors, environments, and 
 
 1. **Load the Dataset**
    ```r
-# Load data
+ Load data
 perfactors <- read.csv("path/to/StudentPerformanceFactors.csv")
 
 Rows: 6607 Columns: 20                 [] 89.75GB/s, eta:  0s
