@@ -1,0 +1,35 @@
+**Load the Dataset**
+```r
+# Load data
+perfactors <- read.csv("path/to/StudentPerformanceFactors.csv")
+
+# Preview the first few rows
+head(perfactors)
+
+# Get data structure
+str(perfactors)
+
+# Summary statistics for all columns
+summary(perfactors)
+
+# Handle Missing Data
+colSums(is.na(perfactors))
+perfactors <- na.omit(perfactors)
+sum(duplicated(perfactors))
+
+# Seperate data types
+
+perfactors$Hours_Studied <- as.numeric(perfactors$Hours_Studied)
+perfactors$Attendance <- as.numeric(perfactors$Attendance)
+perfactors$Sleep_Hours <- as.numeric(perfactors$Sleep_Hours)
+perfactors$Previous_Scorse <- as.numeric(perfactors$Previous_Scores)
+perfactors$Previous_Scores <- as.numeric(perfactors$Previous_Scores)
+perfactors$Parental_Involvement <- as.factor(perfactors$Parental_Involvement)
+
+# Visualize the Data
+
+ggplot(perfactors, aes(x = Exam_Score)) +
+     geom_histogram(binwidth = 5, fill = "blue", color = "black") 
+
+ggplot(perfactors, aes(x = Teacher_Quality)) +
+     geom_bar(fill = "orange")
