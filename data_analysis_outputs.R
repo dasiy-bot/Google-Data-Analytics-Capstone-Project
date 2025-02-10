@@ -147,3 +147,4 @@ Hours_Studied
  Max.   :100.00  
 
 <img src="https://github.com/dasiy-bot/Google-Data-Analytics-Capstone-Project/main/Teacher_Quality.png">
+![My Plot](https://github.com/dasiy-bot/Google-Data-Analytics-Capstone-Project/main/Teacher_Quality.png)
