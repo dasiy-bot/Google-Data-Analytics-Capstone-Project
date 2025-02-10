@@ -1,1 +1,147 @@
-
+Hours_Studied  
+ Min.   : 1.00  
+ 1st Qu.:16.00  
+ Median :20.00  
+ Mean   :19.98  
+ 3rd Qu.:24.00  
+ Max.   :44.00  
+   Attendance    
+ Min.   : 60.00  
+ 1st Qu.: 70.00  
+ Median : 80.00  
+ Mean   : 80.02  
+ 3rd Qu.: 90.00  
+ Max.   :100.00  
+ Parental_Involvement
+ high  :1836         
+ low   :1290         
+ medium:3251         
+                     
+                     
+                     
+ Access_to_Resources
+ Length:6377        
+ Class :character   
+ Mode  :character   
+                    
+                    
+                    
+ Extracurricular_Activities
+ Length:6377               
+ Class :character          
+ Mode  :character          
+                           
+                           
+                           
+  Sleep_Hours    
+ Min.   : 4.000  
+ 1st Qu.: 6.000  
+ Median : 7.000  
+ Mean   : 7.035  
+ 3rd Qu.: 8.000  
+ Max.   :10.000  
+ Previous_Scores 
+ Min.   : 50.00  
+ 1st Qu.: 63.00  
+ Median : 75.00  
+ Mean   : 75.06  
+ 3rd Qu.: 88.00  
+ Max.   :100.00  
+ Motivation_Level  
+ Length:6377       
+ Class :character  
+ Mode  :character  
+                   
+                   
+                   
+ Internet_Access   
+ Length:6377       
+ Class :character  
+ Mode  :character  
+                   
+                   
+                   
+ Tutoring_Sessions
+ Min.   :0.000    
+ 1st Qu.:1.000    
+ Median :1.000    
+ Mean   :1.495    
+ 3rd Qu.:2.000    
+ Max.   :8.000    
+ Family_Income     
+ Length:6377       
+ Class :character  
+ Mode  :character  
+                   
+                   
+                   
+ Teacher_Quality   
+ Length:6377       
+ Class :character  
+ Mode  :character  
+                   
+                   
+                   
+  School_Type  
+ private:1944  
+ public :4433  
+               
+               
+               
+               
+ Peer_Influence    
+ Length:6377       
+ Class :character  
+ Mode  :character  
+                   
+                   
+                   
+ Physical_Activity
+ Min.   :0.000    
+ 1st Qu.:2.000    
+ Median :3.000    
+ Mean   :2.973    
+ 3rd Qu.:4.000    
+ Max.   :6.000    
+ Learning_Disabilities
+ Length:6377          
+ Class :character     
+ Mode  :character     
+                      
+                      
+                      
+ Parental_Education_Level
+ college     :1939       
+ high school :3158       
+ postgraduate:1280       
+                         
+                         
+                         
+ Distance_from_Home
+ Length:6377       
+ Class :character  
+ Mode  :character  
+                   
+                   
+                   
+    Gender    
+ female:2689  
+ male  :3688  
+              
+              
+              
+              
+   Exam_Score    
+ Min.   : 55.00  
+ 1st Qu.: 65.00  
+ Median : 67.00  
+ Mean   : 67.25  
+ 3rd Qu.: 69.00  
+ Max.   :100.00  
+ Previous_Scores 
+ Min.   : 50.00  
+ 1st Qu.: 63.00  
+ Median : 75.00  
+ Mean   : 75.06  
+ 3rd Qu.: 88.00  
+ Max.   :100.00  
