@@ -22,6 +22,9 @@ The dataset contains attributes related to student behaviors, environments, and 
 
 ## **Key Steps**  
 
+<img src="https://raw.githubusercontent.com/dasiy-bot/Google-Data-Analytics-Capstone-Project/refs/heads/main/Teacher_Quality.png?token=GHSAT0AAAAAAC6VH3PTFGYAU23IRNWASYGQZ5KA6TA" alt="Teacher_Quality Plot">
+
+![Teacher_Quality Plot](https://raw.githubusercontent.com/dasiy-bot/Google-Data-Analytics-Capstone-Project/refs/heads/main/Teacher_Quality.png?token=GHSAT0AAAAAAC6VH3PTFGYAU23IRNWASYGQZ5KA6TA) 
 
 ## **Key Findings**  
 - **Hours_Studied** and **Motivation_Level** are positively correlated with exam performance.  
