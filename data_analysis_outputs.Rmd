@@ -146,4 +146,4 @@ Hours_Studied
  3rd Qu.: 88.00  
  Max.   :100.00  
 
-![my plot](https://github.com/dasiy-bot/Google-Data-Analytics-Capstone-Project/main/Teacher_Quality.png)
+<img src="https://github.com/dasiy-bot/Google-Data-Analytics-Capstone-Project/main/Teacher_Quality.png">
